@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: cadetblue;
+}
+
+ nav, section, article, aside, footer {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #000000;
+  background-color: beige;
+  align-items: center;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+/* Clear outline when navigating with the Tab key */
+a:focus, input:focus, select:focus, textarea:focus, button:focus {
+  outline: 3px solid #000000;
+}
