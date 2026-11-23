@@ -1,34 +1,38 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>NETRA - Mission Control</title>
+
     <link rel="stylesheet" href="netra.css">
 </head>
+
 <body>
 
+    <!-- NAVIGATION BAR -->
     <header class="navbar">
 
-        <!-- Left Section: Logo and Branding -->
+        <!-- LEFT SECTION -->
         <div class="brand-section">
             <div class="logo">N</div>
             <h1 class="brand-name">NETRA</h1>
         </div>
 
-        <!-- Middle Section: Title and Subtitle -->
+        <!-- MIDDLE SECTION -->
         <div class="title-section">
-            <h2>– Mission Control</h2>
+            <h2>- Mission Control</h2>
             <p>Smart Rover Fleet. Intelligent Campus.</p>
         </div>
 
-        <!-- Right Section: Status and Button -->
+        <!-- RIGHT SECTION -->
         <div class="right-section">
 
             <div class="status">
                 <span class="status-dot"></span>
-                <span>Live - Simulated Telemetry</span>
+                Live - Simulated Telemetry
             </div>
 
             <button class="dispatch-btn">
@@ -39,5 +43,64 @@
 
     </header>
 
+
+    <!-- MAIN DASHBOARD -->
+    <main class="page">
+
+        <!-- KPI CARDS SECTION -->
+        <section class="kpi-grid">
+
+            <!-- ROVERS ONLINE -->
+            <article class="kpi-card">
+
+                <span>ROVERS ONLINE</span>
+
+                <h2 id="online-count">6 / 6</h2>
+
+                <p>Active rover units</p>
+
+            </article>
+
+
+            <!-- AVERAGE BATTERY -->
+            <article class="kpi-card">
+
+                <span>AVERAGE BATTERY</span>
+
+                <h2 id="battery-level">85%</h2>
+
+                <p>Overall battery status</p>
+
+            </article>
+
+
+            <!-- OPEN ALERTS -->
+            <article class="kpi-card">
+
+                <span>OPEN ALERTS</span>
+
+                <h2 id="open-alerts">0</h2>
+
+                <p>Active alerts and warnings</p>
+
+            </article>
+
+
+            <!-- DISTANCE TRAVELLED -->
+            <article class="kpi-card">
+
+                <span>DISTANCE TRAVELLED</span>
+
+                <h2 id="distance-travelled">500m</h2>
+
+                <p>Total distance travelled</p>
+
+            </article>
+
+        </section>
+
+    </main>
+
 </body>
+
 </html>

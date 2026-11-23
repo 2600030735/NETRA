@@ -1,56 +1,57 @@
-CSS file for NAV bar
-/* Remove default spacing */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* Navigation bar */
+body {
+    background-color: #0b1220;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* NAVBAR */
 .navbar {
-    background-color: #050d1d;
-    height: 125px;
+    background-color: #050a14;
+    min-height: 125px;
     display: flex;
     align-items: center;
     padding: 0 30px;
-    border-bottom: 2px solid #172b4c;
+    border-bottom: 2px solid #1e293b;
 }
 
-/* Logo section */
 .brand-section {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-/* N Logo */
 .logo {
     color: #50b5ff;
     font-size: 80px;
     font-weight: bold;
 }
 
-/* NETRA text */
 .brand-name {
     color: #64baff;
     font-size: 55px;
 }
 
-/* Title section */
 .title-section {
     margin-left: 40px;
 }
 
 .title-section h2 {
     color: white;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .title-section p {
-    color: white;
-    font-size: 22px;
+    color: #91a8c5;
+    font-size: 18px;
+    margin-top: 8px;
 }
 
-/* Right section */
 .right-section {
     display: flex;
     align-items: center;
@@ -58,28 +59,76 @@ CSS file for NAV bar
     gap: 30px;
 }
 
-/* Live status */
 .status {
     color: #16e9a1;
-    font-size: 20px;
+    font-size: 18px;
 }
 
-/* Green circle */
 .status-dot {
     display: inline-block;
     background-color: #16e9a1;
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
+    margin-right: 6px;
 }
 
-/* Dispatch button */
 .dispatch-btn {
     background-color: #087bff;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     padding: 15px 25px;
     border: none;
-    border-radius: 12px;
+    border-radius: 10px;
     cursor: pointer;
+}
+
+.dispatch-btn:hover {
+    background-color: #0056c7;
+}
+
+/* MAIN DASHBOARD */
+.page {
+    padding: 40px 5%;
+}
+.page p{
+    color:white;
+}
+
+/* KPI GRID */
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 30px;
+}
+.kpi-card, .panel {
+    background: #14243a;
+    border: 1px solid #2a4262;
+    border-radius: 12px;
+}
+.kpi-card {
+    padding: 22px;
+    transition: 0.2s;
+}
+
+/* CARD HOVER EFFECT */
+.kpi-card:hover {
+    border-color: #438cff;
+    transform: translateY(-3px);
+}
+.kpi-card span {
+    color: #91a8c5;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.kpi-card h2 {
+    color: #54a5ff;
+    font-size: 29px;
+    margin: 14px 0 8px;
+}
+.kpi-card p {
+    color: #91a8c5;
+    font-size: 12px;
 }
