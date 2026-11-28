@@ -1,0 +1,52 @@
+<html>
+<head>
+    <title>
+        Simple Calculator
+    </title>
+</head>
+<body>
+    <h2>Simple Calculator</h2>
+    <input type="number" id="a" placeholder="Enter First Number">/<br/><br/>
+    <input type="number" id="b" placeholder="Enter Second Number">/<br/><br/>
+    <button onclick="calculate('+')">Addition</button>
+    <button onclick="calculate('-')">Subtraction</button>
+    <button onclick="calculate('*')">Multiplication</button>
+    <button onclick="calculate('/')">Division</button>
+    <p id="result"></p>
+    <script>
+function calculate(operation) {
+    let x = Number(document.getElementById("a").value); 
+    let y = Number(document.getElementById("b").value);
+    let result;
+    switch(operation) {
+        case '+':
+            result = x + y;
+            break;
+        case '-':
+            result = x - y;
+            break;
+        case '*':
+            result = x * y;
+            break;
+        case '/':
+            result = x / y;
+            break;
+    }
+    document.getElementById("result").innerHTML = operation + " : " +  result;
+}
+    </script>         
+    </script>
+    <h3>
+        Change BackGround Color
+    </h3>
+    <button onclick="changeColor('red')">red</button>
+    <button onclick="changeColor('blue')">blue</button>
+    <button onclick="changeColor('black')">black</button>
+    <button onclick="alert(' Your pc is hacked!!!')">green</button>
+    <script>
+        function changeColor(color){
+            document.body.style.backgroundColor=color;
+        }
+    </script>
+</body>
+</html>
